@@ -1,0 +1,32 @@
+{
+  "name": "dsh-client-ui-deepseek-bg",
+  "version": "1.0.0",
+  "description": "DeepSeek 官网风格深色皮肤：极光背景 + 粒子鲸鱼 + 侧边栏/输入框/气泡/代码块玻璃拟态",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "icon": "icon.svg",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md"
+  ],
+  "license": "MIT"
+}
